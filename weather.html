@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- Student Name: Mhatre,Pushpak Arun
+     Project name:Project 1 (A Weather Web Application)  
+	 Due date:October 19,2016
+     Student id-1001439236
+	 -->
+<html lang="en">
+  <head>
+    <title>A Weather Web Application</title>
+    <meta charset="utf-8"/>
+	<style type="text/css">
+	
+	body .m-title {
+  background-color : #444;
+  border-top : 2px solid #000;
+  border-bottom : 2px solid #000;
+  color : #3371ff;
+  margin-top : 0;
+  padding : .100em 1em .100em 1em;
+  text-align : left;
+  width : auto; }
+  
+  div#main {
+  background-color : #f0f0f0;
+  margin :  auto;
+  height : inherit !important;
+  padding : 0;
+  width : 450px; }
+
+
+	
+  .wrapper {
+    max-width: 520px;
+    height: auto;
+}
+
+.box {
+    display: inline-block;
+    position: relative;
+    width: 210px;
+    height: 40px;
+    background: #FCC;
+    z-index: 0;
+    margin: 2px 2px 2px -2px;
+    transition: all .15s ease-in-out;
+
+}
+.box1 {
+    display: inline-block;
+    position: relative;
+    width: 426px;
+    height: 40px;
+    background: #FCC;
+    z-index: 0;
+    margin: 2px 2px 2px -2px;
+    transition: all .15s ease-in-out;
+}
+.box:hover {
+    background: #9CC;
+    z-index: 100;
+    transform: scale(1.2,1.2);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.2);
+}
+
+.box1:hover {
+    background: #9CC;
+    z-index: 100;
+    transform: scale(1.2,1.2);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.2);
+}
+ 
+
+	
+  </style>
+	
+	
+    <script type="text/javascript" src="weather.js"></script>
+  </head>
+  <body onload="initialize();">
+    <form>
+       <label>City: <input type="text" id="form-input"/></label>
+       <input type="button" onclick="sendRequest();" value="Display Info"/>
+    </form>
+    
+	
+	
+	
+	
+	<div id="main" style="display:none">
+<h2 class="m-title"><center>Weather Information</center></h2>
+
+	<table id="city_info" class="wrapper" >
+<tr>
+<td class="box"  align="center"></td>
+<td class="box" align="center"></td>
+<td ></td>
+<td></td>
+</tr>
+
+
+
+<tr>
+<td class="box" align="center"></td>
+<td class="box" align="center"></td>
+
+</tr>
+
+
+<tr>
+<td class="box" align="center"></td>
+<td class="box" align="center"></td>
+ 
+</tr>
+
+
+<tr>
+<td class="box" align="center"></td>
+<td class="box" align="center"></td>
+
+</tr>
+
+<tr>
+<td class="box" align="center"></td>
+<td class="box" align="center"></td>
+
+</tr>
+
+<tr>
+<td class="box" align="center"></td>
+<td class="box" align="center"></td>
+</tr>
+
+<tr>
+
+<td  class="box1" colspan="0" bgcolor="#FCC";" style="font-weight:bold" align="center"><div id = "advise" > </div></td>
+
+</tr>
+</table>
+
+	</div>
+	</div>
+ 
+
+ </body>
+</html>
